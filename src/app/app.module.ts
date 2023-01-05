@@ -8,12 +8,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterLink } from '@angular/router';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,8 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     NgbCollapseModule,
     RouterLink,
-    NgbDropdownModule
+    NgbDropdownModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
