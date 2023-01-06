@@ -1,20 +1,120 @@
-<div class="container-fluid">
+<div class="container-fluid mb-5">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12">
             <img src="assets/Images/MCHI.jpg" alt="image">
         </div>
     </div>
-    <div class="row">
+    <div class="row form-class">
         <div class="col-12">
             <form [formGroup]="mchi">
                <div class="container">
                  <div class="row">
                     <div class="col-lg-4 col-md-4 col-xs-6">
-                        <label for="pType" class="form-label">Property Type</label>
-                           <input type="text" id="pType" formControlName="pType" class="form-control">
+                    <div class="form-floating">  
+                        <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                            <option selected>Select Property Type</option>
+                            <option value="oomercia">Coomercial</option>
+                            <option value="Residential">Residential</option>
+                        </select>
+                        <label for="floatingSelect">Property Type</label>
                     </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6">
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>Select Property Sub Type</option>
+                                <option>Co-working Space      </option>
+                                <option>Commercial Land</option>
+                                <option>Flat</option>
+                                <option>House/Villa</option>
+                                <option>Industrial Building</option>
+                                <option>Industrial Shed</option>
+                            </select>
+                            <label for="floatingSelect">Property Sub Type</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6">
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>Select Construction type</option>
+                                <option value="Ready Posession">Ready Posession</option>
+                                <option value="Under Construction">Under Construction </option>
+                            </select>
+                            <label for="floatingSelect">Construction Status</label>
+                        </div>
+                        </div>
                 </div>
+                <div class="row mt-3">
+                    <div class="col-lg-4 col-md-4 col-xs-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-floating">  
+                                    <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                        <option selected>From</option>
+                                            <option>&#8377; 10 Lac</option>
+                                            <option>&#8377; 20 Lac</option>
+                                            <option>&#8377; 30 Lac</option>
+                                            <option>&#8377; 40 Lac</option>
+                                            <option>&#8377; 50 Lac</option>
+                                            <option>&#8377; 60 Lac</option>
+                                    </select>
+                                    <label for="floatingSelect">Price</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">  
+                                    <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                        <option selected>To</option>
+                                            <option>&#8377; 10 Lac</option>
+                                            <option>&#8377; 20 Lac</option>
+                                            <option>&#8377; 30 Lac</option>
+                                            <option>&#8377; 40 Lac</option>
+                                            <option>&#8377; 50 Lac</option>
+                                            <option>&#8377; 60 Lac</option>
+                                    </select>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6">
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>Select City</option>
+                                <option>Ambernath (East)    </option>
+                                <option>Ambernath (west)</option>
+                                <option>Asangaon (East)</option>
+                                <option>Badlapur (east)</option>
+                                <option>Badlapur (West)</option>
+                                <option>Dombivli (East)</option>
+                                <option>Kalyan (East)</option>
+                                <option>Kalyan (West)</option>
+                                <option>Karjat</option>
+                                <option>New Panvel</option>
+                                <option>Shahad</option>
+                                <option>Shahapur</option>
+                                <option>Thakurli (East)</option>
+                                <option>Titwala (East)</option>
+                                <option>Titwala (west)</option>
+                                <option>Vikhroli (West)</option>
+                                <option>Virar (West)</option>
+                                <option>Vithalwadi (East)</option>
+                            </select>
+                            <label for="floatingSelect">City</label>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                   <option value="Select City">Select City</option>
+                                </select>
+                                <label for="floatingSelect">Area</label>
+                            </div>
+                        </div>
+                </div>
+                <button type="reset">Clear</button>
                </div>
+               
             </form>
         </div>
     </div>
