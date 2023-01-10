@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,22 @@ import { FormGroup } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
    mchi!: FormGroup
-  constructor() { }
+   card: any
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     this.mchi = new FormGroup({
       
     })
+    this.Data()
+  }
+  Data(){
+    this.http.get('assets/Data.json')
+    .subscribe(Response => {
+      console.log(Response)
+      this.card = Response;
+    })
   }
 
 }
+

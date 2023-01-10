@@ -1,13 +1,14 @@
-<div class="container-fluid mb-5">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-xs-4">
             <img src="assets/Images/MCHI.jpg" alt="image">
         </div>
     </div>
     <div class="row form-class">
         <div class="col-12">
+            <div class="container">
             <form [formGroup]="mchi">
-               <div class="container">
+               
                  <div class="row">
                     <div class="col-lg-4 col-md-4 col-xs-6">
                     <div class="form-floating">  
@@ -111,12 +112,31 @@
                                 <label for="floatingSelect">Area</label>
                             </div>
                         </div>
-                </div>
-                <button type="reset">Clear</button>
+                
+                
                </div>
-               
+               <button type="reset">Clear</button>
             </form>
+            </div>
         </div>
     </div>
 </div>
-
+<div class="container some">
+    <div class="row">
+        <div class="col-3" *ngFor="let item of card">
+          <ng-container >
+            <div class="card" >
+                <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <p class="card-text">{{item.desc}}</p>
+                  <p class="card-text price">&#8377; {{item.priceFrom}} - &#8377; {{item.priceTo}}</p>
+                  <p class="cadr-text bed">Bedroom...............................................{{item.Bedroom}}</p>
+                  <p class="card-text">Carpet......................{{item.carpet}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </ng-container>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+[
+    {"image": "assets/Images/krishna.jpg", "title": "Krishna Square", "desc": "Netivali, Kalyan (East)", "priceFrom": "47,58,750", "priceTo": "87,75,000", "Bedroom": "1,2,3", "carpet": "411 sqft - 724 sqft"},
+    {"image": "assets/Images/Balaji.jpg", "title": "Balaji Park", "desc": "Sukhapur, New Panvel", "priceFrom": "35,00,000", "priceTo": "35,00,000", "Bedroom": "1,2,", "carpet": "410 sqft - 410 sqft"},
+    {"image": "assets/Images/Vishwajeet.jpg", "title": "Vishwajeet Soman Central", "desc": "Naranwadi, Kalyan (Weast)", "priceFrom": "58,00,000", "priceTo": "84,00,000", "Bedroom": "2,1", "carpet": "430 sqft"},
+    {"image": "assets/Images/Manhight.jpg", "title": "Arya & Ira at The residences", "desc": "Godrej Hills, Kalyan (weast)", "priceFrom": "44,00,000", "priceTo": "58,60,000", "Bedroom": "1,2", "carpet": "436 sqft - 583 sqft"},
+    {"image": "assets/Images/Kohinnor.jpg", "title": "Kohinoor Majestic", "desc": "Khadakpada, Kalyan (West)", "priceFrom": "46,00,000", "priceTo": "1,00,00,000", "Bedroom": "1,2,3", "carpet": "444 sqft - 962 sqft"},
+    {"image": "assets/Images/Woodside.jpg", "title": "Woodside Meadows- Shops", "desc": "Gauripada, Kalyan (Weast)", "priceFrom": "32,66,200", "priceTo": "48,12,000", "Bedroom": "", "carpet": "144 sqft - 220 sqft"},
+    {"image": "assets/Images/Gnp.png", "title": "GNP Galaxy - Offices & Industrial Unit", "desc": "Kansai MIDC, Kalyan (East)", "priceFrom": "62,26,200", "priceTo": "85,32,000", "Bedroom": "1", "carpet": "744 sqft - 1019 sqft"},
+    
+    {"image": "assets/Images/Manhight.jpg", "title": "Birla", "desc": "Murabad Road Shahada, Kalyan (Weast)", "priceFrom": "41,00,000", "priceTo": "45,00,000", "Bedroom": "1,2", "carpet": "425 sqft - 490 sqft"}
+]
