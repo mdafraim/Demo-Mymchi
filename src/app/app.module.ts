@@ -10,13 +10,30 @@ import { RouterLink } from '@angular/router';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { KrishnaComponent } from './krishna/krishna.component';
+import { BalajiComponent } from './balaji/balaji.component';
+import { VishwajeetComponent } from './vishwajeet/vishwajeet.component';
+import { AryaComponent } from './arya/arya.component';
+import { KohinoorComponent } from './kohinoor/kohinoor.component';
+import { WoodsideComponent } from './woodside/woodside.component';
+import { GnpComponent } from './gnp/gnp.component';
+import { BirlaComponent } from './birla/birla.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    KrishnaComponent,
+    BalajiComponent,
+    VishwajeetComponent,
+    AryaComponent,
+    KohinoorComponent,
+    WoodsideComponent,
+    GnpComponent,
+    BirlaComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +43,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RouterLink,
     NgbDropdownModule, 
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbCarouselModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

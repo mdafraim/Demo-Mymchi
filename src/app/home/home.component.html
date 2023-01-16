@@ -123,7 +123,7 @@
 </div>
 <div class="container some">
     <div class="row">
-        <div class="col-3" *ngFor="let item of card">
+        <div class="col-lg-3 col-md-6 col-xs-12" *ngFor="let item of card">
           <ng-container >
             <div class="card" >
                 <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
@@ -133,10 +133,25 @@
                   <p class="card-text price">&#8377; {{item.priceFrom}} - &#8377; {{item.priceTo}}</p>
                   <p class="cadr-text bed">Bedroom...............................................{{item.Bedroom}}</p>
                   <p class="card-text">Carpet......................{{item.carpet}}</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a class="btn Button" routerLink="{{item.compo}}" >Details</a>
                 </div>
               </div>
           </ng-container>
         </div>
     </div>
 </div>
+<div class="container-fluid" id="carro">
+    <div class="row">
+
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2" *ngFor="let i of carrosel">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+              
