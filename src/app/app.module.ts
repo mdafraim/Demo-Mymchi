@@ -19,6 +19,12 @@ import { WoodsideComponent } from './woodside/woodside.component';
 import { GnpComponent } from './gnp/gnp.component';
 import { BirlaComponent } from './birla/birla.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
+import { ExhibitionComponent } from './exhibition/exhibition.component';
+import { EventComponent } from './event/event.component';
+import { PressComponent } from './press/press.component';
+import { IntroductionComponent } from './introduction/introduction.component';
+import { PeopleComponent } from './people/people.component';
 
 
 @NgModule({
@@ -33,7 +39,13 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     KohinoorComponent,
     WoodsideComponent,
     GnpComponent,
-    BirlaComponent
+    BirlaComponent,
+    FooterComponent,
+    ExhibitionComponent,
+    EventComponent,
+    PressComponent,
+    IntroductionComponent,
+    PeopleComponent
   ],
   imports: [
     BrowserModule,

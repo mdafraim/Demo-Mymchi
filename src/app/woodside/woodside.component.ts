@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./woodside.component.css']
 })
 export class WoodsideComponent implements OnInit {
-
-  constructor() { }
+  carrosel:any;
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+
   }
+
+
 
 }

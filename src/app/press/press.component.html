@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <h3 class="heading">PRESS RELEASE</h3>
+        <div class="col-lg-3 col-md-6 col-xs-12" *ngFor="let item of one">
+            <img src="{{item.Images}}" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-xs-12" *ngFor="let i of two">
+            <video controls>
+                <source src="{{i.videos}}" type="video/mp4">
+                
+                Your browser does not support the video tag.
+              </video>
+        </div>
+    </div>
+</div>

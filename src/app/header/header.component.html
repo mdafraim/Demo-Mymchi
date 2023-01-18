@@ -14,10 +14,10 @@
                                         <a class="nav-link" id="home" routerLink="/home" (click)="isMenuCollapsed = true">Home</a>
                                     </li>
                                     <li class="nav-item" ngbDropdown>
-                                        <a class="nav-link" ngbDropdownToggle [routerLink]="'.'" (click)="isMenuCollapsed = true">About Us</a>
+                                        <a class="nav-link" ngbDropdownToggle (click)="isMenuCollapsed = true">About Us</a>
                                         <ul ngbDropdownMenu>
-                                           <li ngbDropdownItem>INTRODUCTION</li>
-                                           <li ngbDropdownItem>KEY PEOPLE</li>
+                                           <li ngbDropdownItem routerLink="introduction">INTRODUCTION</li>
+                                           <li ngbDropdownItem routerLink="people">KEY PEOPLE</li>
                                            <li ngbDropdownItem>MANAGING COMMITTEE</li>
                                            <li ngbDropdownItem>EXHIBITION COMMITTEE</li>
                                            <li ngbDropdownItem>LEGAL COMMITTEE</li>
@@ -36,11 +36,11 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item" ngbDropdown>
-                                        <a class="nav-link" ngbDropdownToggle [routerLink]="'.'" (click)="isMenuCollapsed = true">Media</a>
+                                        <a class="nav-link" ngbDropdownToggle (click)="isMenuCollapsed = true">Media</a>
                                         <ul ngbDropdownMenu>
-                                            <li ngbDropdownItem>EXHIBITION</li>
-                                            <li ngbDropdownItem>EVENTS</li>
-                                            <li ngbDropdownItem>PRESS RELEASE</li>
+                                            <li ngbDropdownItem routerLink="exhibition">EXHIBITION</li>
+                                            <li ngbDropdownItem routerLink="event">EVENTS</li>
+                                            <li ngbDropdownItem routerLink="press">PRESS RELEASE</li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">

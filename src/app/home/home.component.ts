@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -17,21 +18,14 @@ export class HomeComponent implements OnInit {
     this.mchi = new FormGroup({
       
     })
-    this.Data(),
-    this.Data1()
+    this.Data()
+ 
   }
   Data(){
     this.http.get('assets/Data.json')
     .subscribe(Response => {
       console.log(Response)
       this.card = Response;
-    })
-  }
-  Data1(){
-    this.http.get('assets/Data1.json')
-    .subscribe( res => {
-      console.log(res)
-      this.carrosel = res;
     })
   }
 
