@@ -1,0 +1,20 @@
+.form-control.ng-touched.ng-invalid{
+    border: 1px solid #c62828;
+}
+.form-control {
+    margin-top: 10px;
+    border: 1px solid gray;
+}
+.btn {
+    background-color: red;
+    color: #f1f1f1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+#btn {
+    text-align: center;
+}
+.main {
+    margin-top: 100px;
+}

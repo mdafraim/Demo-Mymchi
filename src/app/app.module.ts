@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -25,6 +26,9 @@ import { EventComponent } from './event/event.component';
 import { PressComponent } from './press/press.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { PeopleComponent } from './people/people.component';
+import { MembersComponent } from './members/members.component';
+import { ManagingComitteeComponent } from './managing-comittee/managing-comittee.component';
+
 
 
 @NgModule({
@@ -45,7 +49,9 @@ import { PeopleComponent } from './people/people.component';
     EventComponent,
     PressComponent,
     IntroductionComponent,
-    PeopleComponent
+    PeopleComponent,
+    MembersComponent,
+    ManagingComitteeComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +62,8 @@ import { PeopleComponent } from './people/people.component';
     NgbDropdownModule, 
     ReactiveFormsModule,
     HttpClientModule,
-    NgbCarouselModule 
+    NgbCarouselModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
