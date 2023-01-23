@@ -1,0 +1,122 @@
+<div class="container">
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 col-sm-6" >
+            <form>
+                <div class="row" >
+                    <div class="col-lg-12 col-md-12" >
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>Select Property Type</option>
+                                <option value="oomercia">Coomercial</option>
+                                <option value="Residential">Residential</option>
+                            </select>
+                            <label for="floatingSelect">Property Type</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>Select Property Sub Type</option>
+                                <option>Co-working Space      </option>
+                                <option>Commercial Land</option>
+                                <option>Flat</option>
+                                <option>House/Villa</option>
+                                <option>Industrial Building</option>
+                                <option>Industrial Shed</option>
+                            </select>
+                            <label for="floatingSelect">Property Sub Type</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>Select Construction type</option>
+                                <option value="Ready Posession">Ready Posession</option>
+                                <option value="Under Construction">Under Construction </option>
+                            </select>
+                            <label for="floatingSelect">Construction Status</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>From</option>
+                                    <option>&#8377; 10 Lac</option>
+                                    <option>&#8377; 20 Lac</option>
+                                    <option>&#8377; 30 Lac</option>
+                                    <option>&#8377; 40 Lac</option>
+                                    <option>&#8377; 50 Lac</option>
+                                    <option>&#8377; 60 Lac</option>
+                            </select>
+                            <label for="floatingSelect">Price</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>From</option>
+                                    <option>&#8377; 10 Lac</option>
+                                    <option>&#8377; 20 Lac</option>
+                                    <option>&#8377; 30 Lac</option>
+                                    <option>&#8377; 40 Lac</option>
+                                    <option>&#8377; 50 Lac</option>
+                                    <option>&#8377; 60 Lac</option>
+                            </select>
+                            <label for="floatingSelect">Price</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-floating">  
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                                <option selected>Select City</option>
+                                <option>Ambernath (East)    </option>
+                                <option>Ambernath (west)</option>
+                                <option>Asangaon (East)</option>
+                                <option>Badlapur (east)</option>
+                                <option>Badlapur (West)</option>
+                                <option>Dombivli (East)</option>
+                                <option>Kalyan (East)</option>
+                                <option>Kalyan (West)</option>
+                                <option>Karjat</option>
+                                <option>New Panvel</option>
+                                <option>Shahad</option>
+                                <option>Shahapur</option>
+                                <option>Thakurli (East)</option>
+                                <option>Titwala (East)</option>
+                                <option>Titwala (west)</option>
+                                <option>Vikhroli (West)</option>
+                                <option>Virar (West)</option>
+                                <option>Vithalwadi (East)</option>
+                            </select>
+                            <label for="floatingSelect">City</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+                               <option value="Select City">Select City</option>
+                            </select>
+                            <label for="floatingSelect">Area</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 button">
+                <button type="reset">Clear</button>
+            </div>
+            </form>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6" *ngFor="let item of prop">
+            <div class="card" >
+                <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <p class="card-text">{{item.desc}}</p>
+                  <p class="card-text price">&#8377; {{item.priceFrom}} - &#8377; {{item.priceTo}}</p>
+                  <p class="cadr-text bed">Bedroom...............................................{{item.Bedroom}}</p>
+                  <p class="card-text">Carpet......................{{item.carpet}}</p>
+                  <a class="btn Button" routerLink="{{item.compo}}" >Details</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

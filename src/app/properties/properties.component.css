@@ -1,0 +1,65 @@
+body {
+     background-color: #fafafa;
+}
+.row {
+    margin-top: 25px;
+    position: relative;
+}
+.form-select {
+    margin-top: 20px;
+}
+form {
+    padding: 0 20px 20px 20px;
+    box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.2);
+    
+}
+.button {
+    text-align: center;
+
+  
+}
+button {
+    width: 100px;
+    height: 30px;
+    background-color: #c62828;
+    margin-top: 10px;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+.card {
+    height: 600px;
+    margin-top: 20px;
+    box-shadow: 3px 0 60px 0 rgba(0,0,0,0.12);
+    z-index: 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+}
+.card-title {
+    color:#000000;
+    font-weight: 700;
+}
+.price {
+  color: #c62828;
+  font-size: 18px;
+  font-weight: 600;
+}
+.Button {
+    background-color: #ffffff;
+    color: #c62828;
+    box-shadow: 0px 0px -50px 0px rgba(0,0,0,0.90);
+    width: 120px;
+    position: absolute;
+    bottom: 20px;
+    border: 1px solid  rgba(0, 0, 0, .3);
+    margin-top: 10px;
+    
+}
+.Button:hover {
+    background-color: #e9dfdf;
+
+    
+}

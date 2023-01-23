@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-custom">
+                        <nav class="navbar navbar-expand-lg navbar-custom">
 	
                             <a class="navbar-brand" [routerLink]="'.'"><img src="assets/Images/mymchi-credai-logo.png" alt="Image"></a>
                             <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
@@ -61,7 +61,7 @@
                                         <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="prop" [routerLink]="'.'" (click)="isMenuCollapsed = true">Properties</a>
+                                        <a class="nav-link" id="prop" routerLink="properties" (click)="isMenuCollapsed = true">Properties</a>
                                     </li>
                                 </ul>
                             </div>

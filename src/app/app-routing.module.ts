@@ -1,3 +1,4 @@
+import { PropertiesComponent } from './properties/properties.component';
 import { ManagingComitteeComponent } from './managing-comittee/managing-comittee.component';
 import { MembersComponent } from './members/members.component';
 import { PeopleComponent } from './people/people.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'introduction', component: IntroductionComponent},
   { path: 'people', component: PeopleComponent},
   { path: 'members', component: MembersComponent},
-  { path: 'managing-comittee', component: ManagingComitteeComponent}
+  { path: 'managing-comittee', component: ManagingComitteeComponent},
+  { path: 'properties', component: PropertiesComponent}
 ];
 
 @NgModule({

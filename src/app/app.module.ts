@@ -28,6 +28,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { PeopleComponent } from './people/people.component';
 import { MembersComponent } from './members/members.component';
 import { ManagingComitteeComponent } from './managing-comittee/managing-comittee.component';
+import { PropertiesComponent } from './properties/properties.component';
 
 
 
@@ -51,7 +52,8 @@ import { ManagingComitteeComponent } from './managing-comittee/managing-comittee
     IntroductionComponent,
     PeopleComponent,
     MembersComponent,
-    ManagingComitteeComponent
+    ManagingComitteeComponent,
+    PropertiesComponent
   ],
   imports: [
     BrowserModule,
